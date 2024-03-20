@@ -85,7 +85,7 @@ if($result && mysqli_num_rows($result) > 0){
                     if ($uploadOk == 1) {                                
             
                         //uploads file and adds email address to file name
-                        move_uploaded_file($file['tmp_name'], "pdf/". $newfilename);
+                        move_uploaded_file($file['tmp_name'], "$target_dir". $newfilename);
                         $message = " The file ". htmlspecialchars( basename( $file['name'])). " has been uploaded.";
                         echo "<script type='text/javascript'>alert('$message'); </script>";
                     } else {
@@ -213,7 +213,7 @@ if($result && mysqli_num_rows($result) > 0){
                             if ($uploadOk == 1) {                                
                     
                                 //uploads file and adds email address to file name
-                                move_uploaded_file($file['tmp_name'], "pdf/". $newfilename);
+                                move_uploaded_file($file['tmp_name'], "$target_dir". $newfilename);
                                 $message = " The file ". htmlspecialchars( basename( $file['name'])). " has been uploaded.";
                                 echo "<script type='text/javascript'>alert('$message'); </script>";
                             } else {
@@ -238,7 +238,7 @@ if($result && mysqli_num_rows($result) > 0){
                     $stmt->execute([$email, $user, $fullname, $pnumber, $hours, $employed, $education, $yearexp, $expin, $interest]);      
                     
                     $message = "Information Submitted";
-                    echo "<script type='text/javascript'>alert('$message'); document.location.href='vrf.php';</script>";
+                    //echo "<script type='text/javascript'>alert('$message'); document.location.href='vrf.php';</script>";
                 }else{
         
                     $message = "Please select resume pdf to upload!";
