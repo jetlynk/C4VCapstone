@@ -41,7 +41,8 @@ if($result && mysqli_num_rows($result) > 0){
         if(!empty($_FILES['backcheck']['name']) && !empty($_FILES['ref']['name']) && !empty($_FILES['resume']['name'])){
 
             foreach($_FILES as $file){
-                $newfilename = $email .str_replace(" ", "", basename( $file['name']));
+                $baseEmail = basename($email);
+                $newfilename = $baseEmail .str_replace(" ", "", basename( $file['name']));
                 $target_dir = "pdf/";
                 $target_file = $target_dir . basename($file["name"]);
                 $uploadOk = 1;
@@ -169,7 +170,8 @@ if($result && mysqli_num_rows($result) > 0){
                 if(!empty($_FILES['resume']['name'])){
         
                     foreach($_FILES as $file){
-                        $newfilename = $email .str_replace(" ", "", basename( $file['name']));
+                        $baseEmail = basename($email);
+                        $newfilename = $baseEmail .str_replace(" ", "", basename( $file['name']));
                         $target_dir = "pdf/";
                         $target_file = $target_dir . basename($file["name"]);
                         $uploadOk = 1;
@@ -238,7 +240,7 @@ if($result && mysqli_num_rows($result) > 0){
                     $stmt->execute([$email, $user, $fullname, $pnumber, $hours, $employed, $education, $yearexp, $expin, $interest]);      
                     
                     $message = "Information Submitted";
-                    //echo "<script type='text/javascript'>alert('$message'); document.location.href='vrf.php';</script>";
+                    echo "<script type='text/javascript'>alert('$message'); document.location.href='vrf.php';</script>";
                 }else{
         
                     $message = "Please select resume pdf to upload!";
