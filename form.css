@@ -1,0 +1,226 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+font-size: 100%;
+color: #ffffff;
+}
+
+body{
+height: 100%;
+background-image: url("citybuildings.jpg");
+width:auto;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 400px;
+margin-bottom: 100px;
+clear: both;
+}
+
+li{
+border-right: 1px solid #849284;
+display: inline;
+float: left;
+}
+
+li:last-child{
+border-right: none;
+float: right;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #4cbf91;
+}
+
+.main-heading {
+background: rgba(2, 34, 7, 0.6);
+text-align: center;
+text-decoration-line: underline;
+color: #4cbf91;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+a:link {
+font-size: 20px;
+color: #4cbf91;
+background-color: transparent;
+text-decoration: none;
+}
+a:visited {
+color: pink;
+background-color: transparent;
+text-decoration: none;
+}
+a:hover {
+color: #5ee9b1;
+background-color: transparent;
+text-decoration: underline;
+}
+a:active {
+color: yellow;
+background-color: transparent;
+text-decoration: underline;
+}
+
+.align{
+background: rgba(2, 34, 7, 0.6);
+display: flex;
+align-items: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.text-box {
+position: relative;
+top: 5px;
+left: 50px;
+background: rgba(2, 34, 7, 0.6);
+width: 50%;    
+padding: 10px;
+}
+
+span{
+padding: 10px;
+text-indent: 30px;
+font-size: 20px;
+}
+
+.text-right {
+text-align: right;
+}
+
+.registration-form{
+background: rgba(2, 34, 7, 0.6);
+width: 60rem;
+height: 100%;
+position: relative;
+left: 50px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 2rem;
+margin-top: 20px;
+}
+
+.tall-text{
+height: 200px;
+}
+
+.input-group{
+width: 100%;
+height: 5rem;
+padding: 1rem 1rem 1rem 3rem;
+border: none;
+border-radius: 0.5rem;
+margin-bottom: 1rem;
+}
+
+.input-group-tall{
+width: 100%;
+height: 5rem;
+padding: 5rem 1rem 8rem 3rem;
+border: none;
+border-radius: 0.5rem;
+margin-bottom: 1rem;
+}
+
+.btn{    
+position: relative;
+width: 20%;
+left: 50px;
+}
+
+.form-control {
+display: block;
+width: 100%;
+height: calc(1.5em + 0.75rem + 2px);
+padding: 0.375rem 0.75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 0.25rem;
+}
+
+.tall-form-control {    
+display: block;
+width: 100%;
+height: 100px;
+padding: 0.375rem 0.75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 0.25rem;
+}
+
+.panel-heading{
+color: #ffffff;
+background-color: #4cbf91;
+text-align: center;
+top: 0px;
+width: 100%;
+height: 50px;
+z-index: 200;   
+}
+
+.panel-footer {
+background-color: #4cbf91;
+text-align: right;
+position: fixed;
+bottom: 0%;
+width: 100%;
+height: 20px;
+}
+
+.navBar {
+overflow: hidden;
+background-color: #4cbf91;
+}
+
+.navBar a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navBar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.navBar a.active {
+background-color: #4cbf91;
+color: white;
+}
