@@ -44,6 +44,13 @@ user_type_nav();
       <div class="align"><img src="volunteer-hands.png" alt="volunteers needed" style="float: left; width: 400px; margin: 2rem;">
       <span>Cyber threats are ever increasing. If you have the skills and the time to donate to a worthy cause please fill out an application.</span>
       </div>
+    <br><br>
+      <div class="main-heading"><h2>Partnerships<h2>
+      <div class="center">
+      <a href="https://www.google.com"><img src="google.png" alt="Google" style="padding: 20px; width: 100px; margin: 2rem;"></a>  
+      <a href="https://linkedin.com"><img src="linkedin.png" alt="Linkedin" style="padding: 20px; width: 100px; margin: 2rem;"></a>    
+      <a href="https://github.com/"><img src="github.png" alt="github" style="padding: 20px; width: 100px; margin: 2rem;"></a>   
+      </div>
 
 <div class="panel-footer"> &copy; Cyber Hack </div>     
 </body>
